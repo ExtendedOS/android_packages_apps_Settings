@@ -19,7 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system"
-    settings:initialExpandedChildrenCount="4">
+    settings:initialExpandedChildrenCount="5">
 
     <Preference
         android:key="gesture_settings"
@@ -28,6 +28,14 @@
         android:order="-250"
         android:fragment="com.android.settings.gestures.GestureSettings"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+
+    <Preference
+        android:key="buttons"
+        android:title="@string/buttons_title"
+        android:icon="@drawable/ic_settings_gestures"
+        android:summary="@string/buttons_title"
+        android:order="-251"
+        android:fragment="org.aospextended.extensions.fragments.Buttons"/>
 
     <!-- Backup -->
     <Preference
